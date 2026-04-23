@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genres - In the World of Books</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">In the World of Books</h1>
+      <p class="site-subtitle"><em>Read more. Imagine more.</em></p>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="genres.html">Genres</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="books.html">Books</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="authors.html">Top Authors</a>
+      </li>
+    </ul>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-danger" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div>
+  </header>
+
+  <main class="container my-5">
+    <section class="p-4 p-md-5 mb-5 rounded bg-light border-start border-danger border-5 shadow-sm">
+      <div class="col-lg-8">
+        <h2 class="display-6 fw-bold">List of genres</h2>
+        <p class="text-muted lead">Discover your favourite read. Your literature journey begins here!</p>
+        <p>Some readers like <span class="badge bg-danger">mystery</span>, some prefer <span class="badge bg-danger">love stories</span>, and some want <span class="badge bg-danger">classics</span>.</p>
+<section class="card" id="guessing-game-section">
+    <h2>Genre Quiz</h2>
+    <p>The system has set the number of books from <strong>1 to 100</strong>. Try to guess how many works are in our collection of genres!</p>
+    
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+        <input type="number" id="guess-input" min="1" max="100" placeholder="Enter 1–100" style="flex: 1; min-width: 150px; margin-bottom: 0;">
+        <button id="guess-btn" class="btn btn-outline-danger">To guess</button>
+        <button id="restart-btn" class="btn btn-outline-danger" style="display:none;">Start over</button>
+    </div>
+    
+    <p id="game-feedback" style="margin-top: 12px; font-weight: bold; min-height: 1.5rem;"></p>
+    <p id="attempts-count" style="color: var(--muted);">Tries: 0</p>
+</section>
+      </div>
+    </section>
+
+    <div class="row g-4" id="genres-list">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="position-relative">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Magic</span>
+            <img src="images/72741001.webp" class="card-img-top rounded-top" alt="Fantasy" style="height: 200px; object-fit: cover;">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h3 class="h5 fw-bold">Fantasy</h3>
+            <p class="card-text small text-muted flex-grow-1">Books about magic, new worlds, unusual heroes and big adventures.</p>
+            <a href="books.html#fantasy" class="btn btn-outline-danger btn-sm mt-3">See books</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="position-relative">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Mystery</span>
+            <img src="images/70978477.jpg" class="card-img-top rounded-top" alt="Detective" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column text-center">
+              <div class="mb-1">
+        <span class="badge bg-danger text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">
+          Trending
+        </span>
+      </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="card-body d-flex flex-column text-center">
+            <h3 class="h5 fw-bold">Detective</h3>
+            <p class="card-text small text-muted flex-grow-1">Stories with secrets, crimes, investigations and unexpected endings.</p>
+            <a href="books.html#detective" class="btn btn-outline-danger btn-sm mt-3">See books</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="position-relative">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Feelings</span>
+            <img src="images/The Love Hypothesis.jfif" class="card-img-top rounded-top" alt="Romance" style="height: 200px; object-fit: cover;">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h3 class="h5 fw-bold">Romance</h3>
+            <p class="card-text small text-muted flex-grow-1">Books about relationships, emotions, personal choices and love.</p>
+            <a href="books.html#romance" class="btn btn-outline-danger btn-sm mt-3">See books</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="position-relative">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Classic</span>
+            <img src="images/orig.webp" class="card-img-top rounded-top" alt="Classical Literature" style="height: 200px; object-fit: cover;">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h3 class="h5 fw-bold">Classical Literature</h3>
+            <p class="card-text small text-muted flex-grow-1">Important works that stayed popular and meaningful for many years.</p>
+            <a href="books.html#classic" class="btn btn-outline-danger btn-sm mt-3">See books</a>
+          </div>
+        </div>
+      </div>
+
+    </div> </main>
+
+  <footer class="site-footer py-4 mt-5">
+    <div class="container text-center">
+      <hr>
+      <address>Created for Web Tech Assignment 1/2/3</address>
+      <p>2026, In the World of Books. All rights reserved.</p>
+      <p><a href="#top" class="text-danger">Back to top</a></p>
+    </div>
+  </footer>
+  <script src="genres.js"></script>
+</body>
+</html>
